@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 1000vh;
+  background-color: #202020;
+}
+
+.wrapper {
+  width: 100%;
+  height: 80px;
+  background-color: #0077c0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+  box-shadow: 0 2px 10px #000, inset 0px -1px 5px #fff,
+    inset 0 -3px 1px 2px #000, inset 0 -1px 5px #fff, inset 0 -4px 5px #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999999;
+}
+
+.wrapper figure {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 3px;
+  left: 25px;
+}
+
+.wrapper figure img {
+  position: absolute;
+  top: -8px;
+  left: -15px;
+  width: 100px;
+  height: 100px;
+}
+
+.wrapper .site-tittle {
+  color: #e7e7e7;
+  font-size: 23px;
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Roboto Mono";
+}
+
+.wrapper .site-tittle span {
+  color: hwb(29 11% 0%);
+}
+
+.wrapper .navbar {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: -500px;
+}
+
+.wrapper .navbar .menu-list {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.wrapper .navbar .menu-list .menu-item a {
+  text-decoration: none;
+  color: #e9e9e9;
+  font-size: 17px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid transparent;
+  transition: all;
+  transition-duration: 300ms;
+  font-family: "Fira Code";
+}
+
+.wrapper .navbar .menu-list .menu-item a:hover {
+  color: #cacaca;
+  border-bottom: 2px solid hwb(29 11% 0%);
+}
+
+.wrapper button {
+  padding: 8px 23px;
+  border-radius: 10px;
+  border: none;
+  background-color: hwb(29 11% 0%);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 550;
+  margin-right: -50px;
+  font-family: "Fira Code";
+  box-shadow: 1px 1px 2px #000, inset 0 0 2px white;
+}
+
+.wrapper button:hover {
+  background-color: rgb(218, 109, 20);
+  box-shadow: inset 1px 1px 2px #000;
+  color: rgb(214, 214, 214);
+  transform: scale(95%);
+}
+
+/* Section Home  Start*/
+
+main #Home-wrapper {
+  padding: 80px 0 20px 0;
+  background-color: #fff;
+}
+
+main #Home-wrapper .home {
+  width: 100%;
+  height: 640px;
+  color: #000;
+  position: relative;
+}
+
+main #Home-wrapper .home h2:nth-child(1) {
+  font-size: 40px;
+  padding-top: 140px;
+  padding-left: 90px;
+  font-family: "Roboto";
+}
+
+h2:nth-child(2) {
+  font-size: 30px;
+  padding-left: 90px;
+  font-family: "Fira Code";
+}
+
+h2 span {
+  color: hwb(29 11% 0%);
+}
+
+h2 span + span {
+  color: rgb(194, 194, 194);
+}
+
+main #Home-wrapper .home p {
+  font-family: "Poppins";
+  margin-top: 50px;
+  padding-left: 90px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #2c2c2e;
+}
+
+main #Home-wrapper .home .animated {
+  position: absolute;
+  top: 100px;
+  right: 90px;
+}
+
+main #Home-wrapper .home button {
+  margin-left: 90px;
+  margin-top: 30px;
+  padding: 15px 0;
+  border-radius: 15px;
+  background-color: hwb(29 11% 0%);
+  cursor: pointer;
+  border: none;
+  box-shadow: 2px 2px 2px #000;
+}
+
+main #Home-wrapper .home button a {
+  padding: 15px 25px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-family: "Fira Code";
+}
+
+main #Home-wrapper .home button:active {
+  background-color: rgb(218, 109, 20);
+  box-shadow: 1px 1px 3px #000;
+  transform: scale(96%);
+}
+
+main #Home-wrapper .home .scroll {
+  width: 50px;
+  height: 50px;
+  background-color: hwb(29 11% 0%);
+  text-align: center;
+  line-height: 50px;
+  border-radius: 25px;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+}
+
+main #Home-wrapper .home .scroll a {
+  padding: 15px 8px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+
+main #About .line {
+  display: flex;
+  justify-content: center;
+}
+
+main #About .line div {
+  width: 50%;
+  height: 50px;
+  background-color: #ffffff;
+  margin-top: -25px;
+  border-radius: 50px;
+}
